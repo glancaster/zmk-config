@@ -9,6 +9,17 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    behaviors {
+        autoshift: autoshift {
+            compatible = "zmk,behavior-hold-tap";
+            label = "AUTOSHIFT";
+            bindings = <&kp>;
+            #binding-cells = <2>;
+            tapping-term-ms = <400>;
+            hold-trigger-key-positions = <1 13 25 2 14 26 15 3 27 4 16 28 5 17 29 6 18 30 7 19 31 8 20 9 21 22>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
