@@ -10,17 +10,6 @@
 
 / {
     behaviors {
-        autoshift: autoshift {
-            compatible = "zmk,behavior-hold-tap";
-            label = "AUTOSHIFT";
-            bindings =
-                <&kp>,
-                <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <400>;
-            hold-trigger-key-positions = <1 13 25 2 14 26 15 3 27 4 16 28 5 17 29 6 18 30 7 19 31 8 20 9 21 22>;
-        };
     };
 
     keymap {
@@ -34,10 +23,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-  &kp TAB  &kp Q  &kp W     &kp F  &kp P      &kp B      &kp J  &kp L      &kp U    &kp Y  &kp SEMICOLON  &kp BSPC
-&kp LCTRL  &kp A  &kp R     &kp S  &kp T      &kp G      &kp M  &kp N      &kp E    &kp I          &kp O   &kp SQT
-&kp LSHFT  &kp Z  &kp X     &kp C  &kp D      &kp V      &kp K  &kp H  &kp COMMA  &kp DOT       &kp FSLH   &kp ESC
-                         &kp LGUI  &mo 1  &kp SPACE    &kp RET  &mo 2   &kp RALT
+  &kp TAB  &mt LS(Q) Q  &mt LS(W) W  &mt LS(F) F  &mt LS(P) P  &mt LS(B) B    &mt LS(J) J  &mt LS(L) L  &mt LS(U) U  &mt LS(Y) Y  &kp SEMICOLON  &kp BSPC
+&kp LCTRL  &mt LS(A) A  &mt LS(R) R  &mt LS(S) S  &mt LS(T) T  &mt LS(G) G    &mt LS(M) M  &mt LS(N) N  &mt LS(E) E  &mt LS(I) I    &mt LS(O) O   &kp SQT
+&kp LSHFT  &mt LS(Z) Z  &mt LS(X) X  &mt LS(C) C  &mt LS(D) D  &mt LS(V) V    &mt LS(K) K  &mt LS(H) H    &kp COMMA      &kp DOT       &kp FSLH   &kp ESC
+                                        &kp LGUI        &mo 1    &kp SPACE        &kp RET        &mo 2     &kp RALT
             >;
         };
 
