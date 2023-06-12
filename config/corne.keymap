@@ -15,11 +15,6 @@
 
     combos {
         compatible = "zmk,combos";
-
-        new_combo {
-            bindings = <&kp ESCAPE>;
-            key-positions = <18 19>;
-        };
     };
 
     macros {
