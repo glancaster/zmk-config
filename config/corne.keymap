@@ -23,10 +23,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-     &kp TAB  &kp Q  &kp W    &kp F                   &kp P  &kp B         &kp J                 &kp L      &kp U    &kp Y  &kp SEMICOLON       &trans
-   &kp LCTRL  &kp A  &kp R    &kp S                   &kp T  &kp G         &kp M                 &kp N      &kp E    &kp I          &kp O  &mt DQT SQT
-&kp LEFT_GUI  &kp Z  &kp X    &kp C                   &kp D  &kp V         &kp K                 &kp H  &kp COMMA  &kp DOT       &kp FSLH      &kp ESC
-                            &kp TAB  &mt LEFT_CONTROL SPACE  &mo 1    &lt 2 BSPC  &mt LEFT_SHIFT ENTER   &kp RALT
+     &kp TAB  &kp Q  &kp W    &kp F                   &kp P  &kp B          &kp J                     &kp L      &kp U    &kp Y  &kp SEMICOLON       &trans
+   &kp LCTRL  &kp A  &kp R    &kp S                   &kp T  &kp G          &kp M                     &kp N      &kp E    &kp I          &kp O  &mt DQT SQT
+&kp LEFT_GUI  &kp Z  &kp X    &kp C                   &kp D  &kp V          &kp K                     &kp H  &kp COMMA  &kp DOT       &kp FSLH      &kp ESC
+                            &kp TAB  &mt LEFT_CONTROL SPACE  &mo 1    &lt 2 ENTER  &mt LEFT_SHIFT BACKSPACE   &kp RALT
             >;
         };
 
@@ -38,10 +38,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans  &kp N7  &kp N8  &kp N9  &kp N0    &trans   &kp C_AL_MAIL          &kp UP     &trans    &kp PAGE_UP  &trans
-&trans  &trans  &kp N4  &kp N5  &kp N6  &trans    &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp PAGE_DOWN  &trans
-&trans  &trans  &kp N1  &kp N2  &kp N3  &trans    &trans          &trans          &trans     &trans         &trans  &trans
-                        &trans  &trans  &trans    &trans         &kp DEL          &trans
+&trans         &trans  &kp N7  &kp N8  &kp N9  &kp N0    &trans   &kp C_AL_MAIL          &kp UP     &trans    &kp PAGE_UP  &trans
+&trans  &kp LG(LS(S))  &kp N4  &kp N5  &kp N6  &trans    &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp PAGE_DOWN  &trans
+&trans    &kp LA(TAB)  &kp N1  &kp N2  &kp N3  &trans    &trans          &trans          &trans     &trans         &trans  &trans
+                               &trans  &trans  &trans    &trans          &trans         &kp DEL
             >;
         };
 
