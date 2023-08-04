@@ -39,7 +39,7 @@
 
             bindings = <
 &trans         &trans  &kp N7  &kp N8  &kp N9  &kp N0    &trans   &kp C_AL_MAIL          &kp UP     &trans    &kp PAGE_UP  &trans
-&trans  &kp LG(LS(S))  &kp N4  &kp N5  &kp N6  &trans    &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp PAGE_DOWN  &trans
+&trans  &kp LG(LS(S))  &kp N4  &kp N5  &kp N6   &mo 3    &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp PAGE_DOWN  &trans
 &trans    &kp LA(TAB)  &kp N1  &kp N2  &kp N3  &trans    &trans          &trans          &trans     &trans         &trans  &trans
                                &trans  &trans  &trans    &trans          &trans         &kp DEL
             >;
@@ -57,6 +57,15 @@
 &trans    &bt BT_CLR    &bt BT_NXT    &bt BT_PRV        &trans        &trans    &kp MINUS  &kp EQUAL              &kp LBKT  &kp RBKT         &kp BSLH  &kp GRAVE
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp UNDER   &kp PLUS              &kp LBRC  &kp RBRC         &kp PIPE  &kp TILDE
                                           &trans        &trans        &trans       &trans     &trans                &trans
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &trans  &kp F7  &kp F8  &kp F9  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp F4  &kp F5  &kp F6  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp F1  &kp F2  &kp F3  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
