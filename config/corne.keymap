@@ -9,9 +9,6 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    behaviors {
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -23,10 +20,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-     &kp TAB  &kp Q  &kp W    &kp F                   &kp P  &kp B          &kp J                     &kp L      &kp U    &kp Y  &mt DOUBLE_QUOTES APOS         &trans
-&kp LEFT_ALT  &kp A  &kp R    &kp S                   &kp T  &kp G          &kp M                     &kp N      &kp E    &kp I                   &kp O  &kp SEMICOLON
-&kp LEFT_GUI  &kp Z  &kp X    &kp C                   &kp D  &kp V          &kp K                     &kp H  &kp COMMA  &kp DOT                &kp FSLH        &kp ESC
-                            &kp TAB  &mt LEFT_CONTROL SPACE  &mo 1    &lt 2 ENTER  &mt LEFT_SHIFT BACKSPACE   &kp RALT
+&kp TAB       &kp Q  &kp W  &kp F    &kp P                   &kp B    &kp J        &kp L                     &kp U      &kp Y    &mt DOUBLE_QUOTES APOS  &trans
+&kp LEFT_ALT  &kp A  &kp R  &kp S    &kp T                   &kp G    &kp M        &kp N                     &kp E      &kp I    &kp O                   &kp SEMICOLON
+&kp LEFT_GUI  &kp Z  &kp X  &kp C    &kp D                   &kp V    &kp K        &kp H                     &kp COMMA  &kp DOT  &kp FSLH                &kp ESC
+                            &kp TAB  &mt LEFT_CONTROL SPACE  &mo 1    &lt 2 ENTER  &mt LEFT_SHIFT BACKSPACE  &kp RALT
             >;
         };
 
@@ -38,10 +35,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans         &trans  &kp N7  &kp N8  &kp N9  &kp N0    &trans   &kp C_AL_MAIL          &kp UP     &trans    &kp PAGE_UP  &trans
-&trans  &kp LG(LS(S))  &kp N4  &kp N5  &kp N6   &mo 3    &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp PAGE_DOWN  &trans
-&trans    &kp LA(TAB)  &kp N1  &kp N2  &kp N3  &trans    &trans          &trans          &trans     &trans         &trans  &trans
-                               &trans  &trans  &trans    &trans          &trans         &kp DEL
+&trans  &trans         &kp N7  &kp N8  &kp N9  &kp N0     &trans  &kp C_AL_MAIL   &kp UP          &trans     &kp PAGE_UP    &trans
+&trans  &kp LG(LS(S))  &kp N4  &kp N5  &kp N6  &mo 3      &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp PAGE_DOWN  &trans
+&trans  &kp LA(TAB)    &kp N1  &kp N2  &kp N3  &kp ESC    &trans  &trans          &trans          &trans     &trans         &trans
+                               &trans  &trans  &trans     &trans  &trans          &kp DEL
             >;
         };
 
@@ -53,10 +50,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans      &kp EXCL        &kp AT      &kp HASH      &kp DLLR     &kp PRCNT    &kp CARET   &kp AMPS  &kp LEFT_PARENTHESIS  &kp RPAR  &kp KP_MULTIPLY     &trans
-&trans    &bt BT_CLR    &bt BT_NXT    &bt BT_PRV        &trans        &trans    &kp MINUS  &kp EQUAL              &kp LBKT  &kp RBKT         &kp BSLH  &kp GRAVE
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp UNDER   &kp PLUS              &kp LBRC  &kp RBRC         &kp PIPE  &kp TILDE
-                                          &trans        &trans        &trans       &trans     &trans                &trans
+&trans  &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT       &kp CARET  &kp AMPS   &kp LEFT_PARENTHESIS  &kp RPAR  &kp KP_MULTIPLY  &trans
+&trans  &bt BT_CLR    &bt BT_NXT    &bt BT_PRV    &trans        &trans          &kp MINUS  &kp EQUAL  &kp LBKT              &kp RBKT  &kp BSLH         &kp GRAVE
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp UNDER  &kp PLUS   &kp LBRC              &kp RBRC  &kp PIPE         &kp TILDE
+                                    &trans        &trans        &trans          &trans     &trans     &trans
             >;
         };
 
